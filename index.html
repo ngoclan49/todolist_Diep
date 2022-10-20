@@ -36,7 +36,7 @@
               type="text"
               placeholder="Enter an activity..."
             />
-            <button id="addItem">
+            <button id="addItem" onclick="addTask()">
               <i class="fa fa-plus"></i>
             </button>
           </div>
@@ -59,18 +59,15 @@
 
     <script>
       $(function () {
-        $(".toggle-btn").click(function () {
-          $(".filter-btn").toggleClass("open");
+        $('.toggle-btn').click(function () {
+          $('.filter-btn').toggleClass('open');
         });
 
-        $(".filter-btn a").click(function () {
-          $(".filter-btn").removeClass("open");
+        $('.filter-btn a').click(function () {
+          $('.filter-btn').removeClass('open');
         });
       });
     </script>
-    <script src="./js/task.js"></script>
-    <script src="./js/task-list.js"></script>
-    <script src="./js/validation.js"></script>
     <script src="./js/main.js"></script>
   </body>
 </html>
